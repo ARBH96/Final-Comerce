@@ -1,0 +1,47 @@
+// VARIABLES
+$menu-color: #cdc9c9;
+
+// MIXINs para reutilizar estilos
+@mixin header-link {
+  color: $menu-color;
+  text-decoration: none;
+  letter-spacing: 2px;
+}
+
+@mixin header-border($size: 2px) {
+  border-bottom: solid $size $menu-color;
+}
+
+// APLICANDO BEM EN SCSS
+.header {
+  background-color: #1f99c2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  text-align: center;
+
+  &__logo {
+    @include header-link;
+  }
+
+  &__nav-list {
+    display: flex;
+    list-style: none;
+    column-gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  &__item-link {
+    @include header-link;
+
+    //indicamos cual es el estilo activo
+    &--is-active {
+      @include header-border($size: 3px);
+    }
+
+    &:hover {
+      @include header-border;
+    }
+  }
+}
