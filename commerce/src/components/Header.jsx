@@ -1,8 +1,8 @@
-
-
-
-
-
+import {NavLink} from 'react-router-dom';
+import { useContext } from '../hook/useAuthContext';
+import { useContext } from 'react';
+import {SearchContext} from '../context/SearchContext';
+import './header.scss'
 
 const Header = () => {
     const {logout, isAuth} = useAuthContext();
