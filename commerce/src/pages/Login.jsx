@@ -1,10 +1,9 @@
 import {useForm} from 'react-hook-form'
 import {loginUserService} from '../services/userServices'
-import {useNavigate} from 'react-router-dom'
-import {useAuthContext} from '../hook/useAuthContext'
-import '@/styles/form.css'
-import logo from '@/assets/react.svg'
-
+import {useNavigate} from "react-router-dom";
+import {useAuthContext} from "../hook/useAuthContext";
+import "@/styles/form.css";
+import logo from "@/assets/react.svg";
 const Login = () => {
 
     const { register, handleSubmit, formState:{ errors } } = useForm();
