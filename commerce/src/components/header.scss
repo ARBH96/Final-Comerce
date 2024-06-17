@@ -47,7 +47,6 @@ $menu-color: #cdc9c9;
     //indicamos cual es el estilo activo
     &--is-active {
       @include header-border($size: 3px);
-      color: $active-color;
     }
 
     &:hover {
