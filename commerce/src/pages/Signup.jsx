@@ -21,8 +21,7 @@ const Signup = () => {
         console.log('Ocurrio un error en Signup', error)
       }
     }
-  
-  
+    
     return (
       <main className='form-signin w-100'>
         <form onSubmit={handleSubmit(onSubmit)}>

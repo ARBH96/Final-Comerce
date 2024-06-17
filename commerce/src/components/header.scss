@@ -23,6 +23,9 @@ $menu-color: #cdc9c9;
 
   &__logo {
     @include header-link;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: $logo-color;
   }
 
   &__nav-list {
@@ -30,6 +33,13 @@ $menu-color: #cdc9c9;
     list-style: none;
     column-gap: 20px;
     flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+  }
+
+  &_list-item{
+    display: flex;
+    align-items: center;
   }
 
   &__item-link {
@@ -38,10 +48,43 @@ $menu-color: #cdc9c9;
     //indicamos cual es el estilo activo
     &--is-active {
       @include header-border($size: 3px);
+      color: $active-color;
     }
 
     &:hover {
       @include header-border;
+      color: $active-color;
     }
+  }
+
+  &:hover{
+    @include header-border;
+    color: $active-color;
+  }
+
+  &_search{
+    flex:1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px;
+  }
+
+  &-input{
+    width: 100%;
+    max-width: 400px;
+    padding: 0.5rem;
+    border: 1px solid $search-border-color;
+    border-radius: 0.25rem;
+    background-color: $search-bg-color;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+    color: $menu-color;
+  }
+
+  &:focus{
+    border-color: $active-color;
+    box-shadow: 0 0 5px rgba($active-color, 0.5);
+    outline: none;
   }
 }
