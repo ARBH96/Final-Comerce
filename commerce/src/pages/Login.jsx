@@ -5,7 +5,6 @@ import {useAuthContext} from '../hook/useAuthContext'
 import '@/styles/form.css'
 import logo from '@/assets/react.svg'
 
-
 const Login = () => {
 
     const { register, handleSubmit, formState:{ errors } } = useForm();
