@@ -51,13 +51,11 @@ $menu-color: #cdc9c9;
 
     &:hover {
       @include header-border;
-      color: $active-color;
     }
   }
 
   &:hover{
     @include header-border;
-    color: $active-color;
   }
 
   &_search{
@@ -72,16 +70,13 @@ $menu-color: #cdc9c9;
     width: 100%;
     max-width: 400px;
     padding: 0.5rem;
-    border: 1px solid $search-border-color;
     border-radius: 0.25rem;
-    background-color: $search-bg-color;
     transition: all 0.3s ease;
     font-size: 1rem;
     
   }
 
   &:focus{
-    border-color: $active-color;
     box-shadow: 0 0 5px;
     outline: none;
   }
