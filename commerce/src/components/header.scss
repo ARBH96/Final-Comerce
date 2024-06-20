@@ -77,12 +77,12 @@ $menu-color: #cdc9c9;
     background-color: $search-bg-color;
     transition: all 0.3s ease;
     font-size: 1rem;
-    color: $menu-color;
+    
   }
 
   &:focus{
     border-color: $active-color;
-    box-shadow: 0 0 5px rgba($active-color, 0.5);
+    box-shadow: 0 0 5px;
     outline: none;
   }
 }
