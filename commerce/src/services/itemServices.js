@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const BASE_URL ='http://localhost:3000/'
+const BASE_URL ='http://localhost:5177/'
 
 const getAllItemsService =() => axios.get(`${BASE_URL}/items`)
 

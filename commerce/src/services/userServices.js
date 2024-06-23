@@ -2,7 +2,7 @@
 import axios from 'axios'
 
 //* 2) indicar la ruta o el endpoint 
-const BASE_URL = 'http://localhost:3000' // esto lo podemos cambiar si subimos el repo de github a render
+const BASE_URL = 'http://localhost:5177' // esto lo podemos cambiar si subimos el repo de github a render
 
 //* 3) ocupamos mandar información 
 // registrar un usuario
